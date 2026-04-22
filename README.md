@@ -1,6 +1,6 @@
 ## EX. NO: 1 : IMPLEMENTATION OF CAESAR CIPHER
-## NAME : KARTHICK V
-## REG NO : 212223040086
+## NAME : SANTHOSH S
+## REG NO : 212224100052
 
 ## AIM:
 
@@ -15,8 +15,8 @@ becomes C. To change a message back, each letter is replaced by the one three be
 ## EXAMPLE:
 
 
+<img width="741" height="340" alt="img1" src="https://github.com/user-attachments/assets/dae46e46-d6b4-4331-ad57-359a63c951c7" />
 
-![image](https://github.com/Hemamanigandan/CNS/assets/149653568/eb9c6c43-8c80-4cdd-b9d4-91705a311c79)
 
 
 ## ALGORITHM:
@@ -68,7 +68,8 @@ print("DECRYPTED TEXT:", decrypted)
 ## OUTPUT :-
 
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0e16b972-6165-4823-b874-e0aac3567c5a" />
+<img width="819" height="158" alt="Screenshot 2026-04-22 114510" src="https://github.com/user-attachments/assets/54e3e2f2-e50c-467b-baf4-ea35670f7d85" />
+
 
 
 
