@@ -29,48 +29,48 @@ becomes C. To change a message back, each letter is replaced by the one three be
 
 
 ## PROGRAM :-
-```py
-
-def caesar_cipher_encrypt(text, key):
-    cipher = ""
-    for ch in text:
-        if ch.isupper():
-            cipher += chr((ord(ch) - ord('A') + key) % 26 + ord('A'))
-        elif ch.islower(): 
-            cipher += chr((ord(ch) - ord('a') + key) % 26 + ord('a'))
-        else:
-            cipher += ch  
-    return cipher
-def caesar_cipher_decrypt(cipher, key):
-    plain = ""
-    for ch in cipher:
-        if ch.isupper():  
-            plain += chr((ord(ch) - ord('A') - key) % 26 + ord('A'))
-        elif ch.islower():  
-            plain += chr((ord(ch) - ord('a') - key) % 26 + ord('a'))
-        else:
-            plain += ch
-    return plain
-plain = input("Enter the plain text: ")
-key = int(input("Enter the key value: "))
-
-print("\nPLAIN TEXT:", plain)
-
-cipher = caesar_cipher_encrypt(plain, key)
-print("ENCRYPTED TEXT:", cipher)
-
-decrypted = caesar_cipher_decrypt(cipher, key)
-print("DECRYPTED TEXT:", decrypted)
+```c
+#include <stdio.h>  
+#include <string.h>  
+#include <ctype.h>  
+void main()  
+{  
+    char plain[10],cipher[10];  
+    int key,i,length;      
+    int result;      
+    printf("\n Enter the plain text:");      
+    scanf("%s", plain);      
+    printf("\n Enter the key value:");      
+    scanf("%d", &key);      
+    printf("\n \n \t PLAIN TEXt: %s", plain);      
+    printf("\n \n \t ENCRYPTED TEXT:");      
+    for(i=0, length = strlen(plain); i<length; i++)  
+    {  
+        cipher[i]=plain[i] + key;          
+        if (isupper(plain[i]) && (cipher[i] > 'Z'))
+            cipher[i] = cipher[i] - 26;          
+        if (islower(plain[i]) && (cipher[i] > 'z'))
+            cipher[i] = cipher[i] - 26;          
+        printf("%c", cipher[i]);  
+    }  
+    printf("\n \n \t AFTER DECRYPTION : ");      
+    for(i=0;i<length;i++)  
+    {  
+        plain[i]=cipher[i]-key;          
+        if(isupper(cipher[i])&&(plain[i]<'A'))          
+        plain[i]=plain[i]+26;          
+        if(islower(cipher[i])&&(plain[i]<'a'))          
+        plain[i]=plain[i]+26;          
+        printf("%c",plain[i]);  
+    }  
+} 
 
 ```
 
 
 ## OUTPUT :-
 
-
-<img width="819" height="158" alt="Screenshot 2026-04-22 114510" src="https://github.com/user-attachments/assets/54e3e2f2-e50c-467b-baf4-ea35670f7d85" />
-
-
+<img width="437" height="208" alt="Screenshot 2026-04-25 115135" src="https://github.com/user-attachments/assets/1c96e92e-be3a-4b12-8394-5694402fde0f" />
 
 
 ## Result:
