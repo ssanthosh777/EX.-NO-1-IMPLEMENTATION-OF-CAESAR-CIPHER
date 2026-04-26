@@ -4,7 +4,7 @@
 
 ## AIM:
 
-To implement the simple substitution technique named Caesar cipher using Python language.
+To implement the simple substitution technique named Caesar cipher using C Language.
 
 ## DESCRIPTION:
 
