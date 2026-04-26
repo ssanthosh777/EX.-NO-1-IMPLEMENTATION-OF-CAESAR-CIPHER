@@ -74,4 +74,4 @@ void main()
 
 
 ## Result:
-The implementation of the simple substitution technique named Caesar cipher using Python language was completed and executed successfully.
+The implementation of the simple substitution technique named Caesar cipher using C language was completed and executed successfully.
